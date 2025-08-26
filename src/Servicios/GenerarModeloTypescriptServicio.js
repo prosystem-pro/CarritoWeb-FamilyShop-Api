@@ -50,8 +50,7 @@ const GenerarModelos = async () => {
 
     return ModelosTS;
   } catch (error) {
-    console.error("❌ Error en GenerarModelos:", error); // muestra el error completo
-    throw error;
+    throw new Error("Error al generar modelos",error);
   }
 };
 
